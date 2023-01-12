@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diferencia de edades</title>
+</head>
+<body>
+    <script>
+        function saltarLinea(){
+            document.write("<br>");
+            document.write("<br>");
+            document.write("<br>");
+        }
+
+        function imprimir(texto){
+            document.write(texto);
+            saltarLinea();
+            
+        }
+
+        var anyo = 2022;
+        var edadHermano = anyo - 1985;
+        var edadYo = anyo - 1993;
+        imprimir("Mi hermano tiene: " + edadHermano + " años");
+        imprimir("Yo tengo: " + edadYo + " años");
+        var diferenciaEdad = edadHermano - edadYo;
+        imprimir("La diferencia de edad es: " + diferenciaEdad + " años");        
+  
+   </script>
+    
+</body>
+</html>

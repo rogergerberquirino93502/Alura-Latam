@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function saltarLinea(){
+            document.write("<br>");
+            document.write("<br>");
+            document.write("<br>");
+        }
+
+        function imprimir(texto){
+            document.write(texto);
+            saltarLinea();
+           
+        }
+        
+        var anyo = 2022;
+        imprimir("Hola");
+        //este codigo calcula la edad de 3 personas
+        imprimir("Andres tiene: " + (anyo - 2000) + " años");
+        imprimir("Jorge tiene: " + (anyo - 1995) + " años");
+        anyo = 2023;
+        imprimir("Juan tiene: " + (anyo - 2005) + " años");
+        
+        /*
+        var saltodeLinea = "<br><br>";
+        document.write("Andres tiene: " + (anyo - 2000) + " años");
+        document.write(saltodeLinea);
+        document.write("Jorge tiene: " + (anyo - 1995) + " años");
+        document.write(saltodeLinea);
+        document.write("Juan tiene: " + (anyo - 2005) + " años");
+        anyo = 2023;
+        saltarLinea();
+        document.write("Josue tiene: " + (anyo - 2000) + " años");
+        document.write(saltodeLinea);
+        document.write("Josue tiene: " + (anyo - 2000) + " años");
+   */
+   </script>
+</body>
+</html>
