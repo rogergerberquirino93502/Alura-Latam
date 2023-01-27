@@ -1,0 +1,31 @@
+<meta charset="UTF-8">
+<h1>Juego de Adivinanza</h1>
+<script>
+    function saltarLinea() {
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+    }
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+    function sorteo(n) {
+        return Math.round(Math.random() * n);
+    }
+    var numeroSecreto = sorteo(parseInt(prompt("Ingrese el número máximo para el sorteo")));
+    var numeroIngresado = prompt("Adivina el número secreto entre 0 y numero máximo ingresado");
+    
+    if (numeroIngresado == numeroSecreto) {
+        imprimir("¡Ganaste!");
+    } else {
+        if (numeroIngresado < numeroSecreto) {
+            imprimir("El número secreto era: " + numeroSecreto);
+            imprimir("El número ingresado es menor a: " + numeroSecreto);
+        } else {
+            imprimir("El número secreto era: " + numeroSecreto);
+            imprimir("El número ingresado es mayor a: " + numeroSecreto);
+        }
+    }
+
+</script>

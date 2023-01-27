@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+
+<input/>
+<button>Verificar</button>
+<script>
+    var secreto = 7+2;
+    var input = document.querySelector("input");
+    input.focus();
+
+    function verificar(){
+        if(parseInt(input.value) == secreto){
+        alert("Acertaste, el secreto era " + secreto);
+    }else{
+        alert("Fallaste, Intenta de nuevo");
+    }
+
+        input.value = "";
+        input.focus();
+    }
+
+    var button = document.querySelector("button");
+    button.onclick = verificar;
+</script>

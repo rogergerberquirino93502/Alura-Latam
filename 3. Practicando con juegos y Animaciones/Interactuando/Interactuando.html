@@ -1,0 +1,18 @@
+<canvas width="600" height="400">
+
+</canvas>
+<script>
+    var pantallas = document.querySelector("canvas");
+    var pincel = pantallas.getContext("2d");
+
+    pincel.fillStyle = "grey";//propiedad o caracteristica
+    pincel.fillRect(0,0,600,400);
+
+    function escribirAlerta(evento){
+        console.log(evento);
+        alert("Usted hizo un click");
+    }
+
+    pantallas.onclick = escribirAlerta;
+
+</script>

@@ -1,0 +1,19 @@
+<script>
+    function saltarLinea() {
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+    }
+    function imprimirMensaje(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+    var anyoMundial = 1930;
+    var limite = parseInt(prompt("Ingrese el limite de mundiales"));
+
+    while (anyoMundial <= limite) {
+        imprimirMensaje("Hubio Mundial de la fifa en el a;o " + anyoMundial);
+        anyoMundial = anyoMundial + 4;
+    }
+    imprimir("FIN!!!");
+</script>

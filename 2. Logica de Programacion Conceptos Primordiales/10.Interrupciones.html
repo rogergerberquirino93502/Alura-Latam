@@ -1,0 +1,38 @@
+<meta charset="UTF-8">
+<h1>Juego de Adivinanza</h1>
+<script>
+	function saltarLinea() {
+		document.write("<br>");	
+		document.write("<br>");	
+		document.write("<br>");	
+	}  
+	function imprimir(frase) {
+
+		document.write(frase);
+		saltarLinea();
+	}
+    var numeroPensado = Math.round(Math.random()*10);
+    var intentos = 3;
+    var contador = 1;
+    
+    while (contador <= intentos)
+    {
+    var numeroLanzado = parseInt(prompt("Ingrese un numero entre 0-10"));
+    if(numeroPensado == numeroLanzado){
+        alert("Ganaste, en el intento: " + contador + " Numero pensado era: " + numeroPensado);
+        break;
+    }
+    else {
+        alert("Perdiste");
+    }
+    contador++;
+}// Math.round(Math.random()*10); Devuelve el valor del número dado redondeado al entero más cercano.
+    if (numeroPensado == numeroLanzado) {
+        imprimir("Ganaste, en el intento: " + contador + " Numero pensado es: " + numeroPensado);
+        
+    }
+    else {
+        imprimir("Perdiste, el numero pensado era: " + numeroPensado);
+    }
+    imprimir("FIN!!!");
+</script>

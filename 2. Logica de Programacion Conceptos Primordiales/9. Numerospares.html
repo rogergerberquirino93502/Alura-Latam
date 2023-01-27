@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+<h1>Calcular numeros pares</h1>
+<script>
+    function saltarLinea() {
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+    }
+    function imprimirMensaje(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+    //imprimir todos los numeros pares del 1 al 100
+    var contador = 1;
+    while(contador <= 100){
+        if(contador % 2 == 0){
+            imprimirMensaje(contador);
+        }
+        contador++;
+    }
+
+    imprimirMensaje("Fin del programa");
+</script>

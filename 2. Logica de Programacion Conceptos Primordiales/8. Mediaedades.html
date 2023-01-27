@@ -1,0 +1,35 @@
+<meta charset="UTF-8">
+
+<h1>Calcular la media</h1>
+<script>
+    function saltarLinea() {
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+    }
+    function imprimirMensaje(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    var numeroPersonas = parseInt(prompt("Introduce la cantidad de personas:"));
+    contador = 1;
+    var totalEdad=0;
+    while(contador <= numeroPersonas){
+        var edad = parseInt(prompt("Introduce la edad:"));
+        var totalEdad = totalEdad + edad;
+        var mediaEdad = totalEdad / numeroPersonas;
+        contador++;
+    }
+
+    /*var edadPadre = 45;
+    var edadMadre = 40;
+    var edadHijo = 10;
+    var edadHija = 8;
+
+    var totalEdad = edadPadre + edadMadre + edadHijo + edadHija;
+    var mediaEdad = totalEdad / 4;*/
+    imprimirMensaje("La suma de las edades es: " + totalEdad);
+
+    imprimirMensaje("La media de edad es: " + mediaEdad);
+</script>
