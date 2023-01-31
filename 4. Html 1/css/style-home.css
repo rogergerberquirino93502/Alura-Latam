@@ -1,0 +1,44 @@
+.tituloprincipal{
+    padding-left: 30px;
+}
+#banner{
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+.titulocentro{
+    font-size: 30px;
+    text-align: center;
+}
+
+.principal{
+    background: #d3cccc;
+    padding: 20px;
+}
+p{
+    text-align: center;
+}
+em strong{
+    color: #9d0b0b;
+}
+#mision{
+    font-size: 20px;
+}
+.diferenciales{
+    background: #FFFFFF;
+    padding: 30px;
+}
+
+.items{
+    font-style: italic;
+}
+ul{
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+}
+.barber{
+    width:50%;
+    height:100%;
+}
